@@ -16,7 +16,7 @@ resource "aws_launch_template" "swiggy-web-template" {
   name_prefix   = "swiggy-web-template"
   image_id      = "ami-0ec10929233384c7f"
   instance_type = "t3.micro"
-  key_name      = "raham-m"
+  key_name      = "530PMBATCH"
   network_interfaces {
     associate_public_ip_address = true
     security_groups             = [aws_security_group.swiggy-ec2-asg-sg.id]
