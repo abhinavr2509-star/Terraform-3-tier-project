@@ -14,8 +14,8 @@ resource "aws_autoscaling_group" "swiggy-web-asg" {
 ###### Create a Launch Template for the EC2 instances ######
 resource "aws_launch_template" "swiggy-web-template" {
   name_prefix   = "swiggy-web-template"
-  image_id      = "ami-048f4445314bcaa09"
-  instance_type = "t3.micro"
+  image_id      = "ami-05d2d839d4f73aafb"
+  instance_type = "t3.small"
   key_name      = "ALL.pem"
   network_interfaces {
     associate_public_ip_address = true
